@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/HeroSection";
+import { RankingSection } from "@/components/RankingSection";
+import { ReviewsSection } from "@/components/ReviewsSection";
+import { CategoriesSection } from "@/components/CategoriesSection";
+import { PaymentsSection } from "@/components/PaymentsSection";
+import { BonusesSection } from "@/components/BonusesSection";
+import { CalculatorSection } from "@/components/CalculatorSection";
+import { GamesSection } from "@/components/GamesSection";
+import { ProvidersSection } from "@/components/ProvidersSection";
+import { MobileSection } from "@/components/MobileSection";
+import { ProsConsSection } from "@/components/ProsConsSection";
+import { SecuritySection } from "@/components/SecuritySection";
+import { FAQSection } from "@/components/FAQSection";
+import { Footer } from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <HeroSection />
+        <RankingSection />
+        <ReviewsSection />
+        <CategoriesSection />
+        <PaymentsSection />
+        <BonusesSection />
+        <CalculatorSection />
+        <GamesSection />
+        <ProvidersSection />
+        <MobileSection />
+        <ProsConsSection />
+        <SecuritySection />
+        <FAQSection />
+      </main>
+      <Footer />
     </div>
   );
 };
